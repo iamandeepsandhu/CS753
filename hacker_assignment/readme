@@ -18,7 +18,7 @@ chromaprint.decode_fingerprint(raw) -- This converts the raw fingerprint(which i
 
 Example:
 The raw fingerprint of audio of this video file (https://www.youtube.com/watch?v=-7UzQEUyrQA) looks like:
- b'AQAAZBEXJYmUKEkinGgUsugTXNmhHX_w3Cip4coQXniHC48O__iJyleOT8OjTzh5hPnRS7h-4jreaQa7F_WUo9GPP9BlcehzWMo2w1-GP2hyfAv0PuirHGn2w0crdDPSGN4N6VuIvLgWnNJRbcdzVHqGxrmFWMzR_XBPPBbEGP4ohNbxHsyewXGO_sQ34Uafwh36HjlPaPqQ6vjhjehftDts7bhl5D9OHpoV3DjxI_zgo-8knEMP70e9Ez2O_DAPzT6u8yhl-PtwYt9KAIcQEQYwg4SyDAIkLADEAMIEIkAQoZBjBhBAABEMGWSAIAAAYowiQDEngAEQSIEAIkgQaoEAgliJgDCKUEOMUZY5pBQwAAhBCCASAEKQcAI')
+(b'AQAAZBEXJYmUKEkinGgUsugTXNmhHX_w3Cip4coQXniHC48O__iJyleOT8OjTzh5hPnRS7h-4jreaQa7F_WUo9GPP9BlcehzWMo2w1-GP2hyfAv0PuirHGn2w0crdDPSGN4N6VuIvLgWnNJRbcdzVHqGxrmFWMzR_XBPPBbEGP4ohNbxHsyewXGO_sQ34Uafwh36HjlPaPqQ6vjhjehftDts7bhl5D9OHpoV3DjxI_zgo-8knEMP70e9Ez2O_DAPzT6u8yhl-PtwYt9KAIcQEQYwg4SyDAIkLADEAMIEIkAQoZBjBhBAABEMGWSAIAAAYowiQDEngAEQSIEAIkgQaoEAgliJgDCKUEOMUZY5pBQwAAhBCCASAEKQcAI')
 
 The numerical representation looks like:
 [-1082788283, -1082665403, -1084831755, ................................................... ,-578817763, -578957027, -547556071]
