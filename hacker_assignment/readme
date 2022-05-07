@@ -1,3 +1,5 @@
+# Find similar videos based on audio similarity
+
 Group members:
 Amandeep Singh - 180040007
 Saurabh Khandelwal - 180040093
@@ -5,8 +7,22 @@ Saurabh Khandelwal - 180040093
 Paper: AVID
 https://openaccess.thecvf.com/content/CVPR2021/html/Morgado_Audio-Visual_Instance_Discrimination_with_Cross-Modal_Agreement_CVPR_2021_paper.html
 
-Project:
-Find similar videos based on audio similarity
 
-References:
-https://shivama205.medium.com/audio-signals-comparison-23e431ed2207
+Method 1:
+Audio fingerprinting - 
+An acoustic fingerprint is a condensed digital summary, a fingerprint, deterministically generated from an audio signal, that can be used to identify an audio sample or quickly locate similar items in an audio database.
+
+acoustid.fingerprint_file(input) -- Returns a pair consisting of the file's duration and its fingerprint. The fingerprints are compressed are char arrays
+chromaprint.decode_fingerprint(raw) -- This converts the raw fingerprint(which is a char array) into numerical representation
+
+Example:
+The raw fingerprint of audio of this video file (https://www.youtube.com/watch?v=-7UzQEUyrQA) looks like:
+ b'AQAAZBEXJYmUKEkinGgUsugTXNmhHX_w3Cip4coQXniHC48O__iJyleOT8OjTzh5hPnRS7h-4jreaQa7F_WUo9GPP9BlcehzWMo2w1-GP2hyfAv0PuirHGn2w0crdDPSGN4N6VuIvLgWnNJRbcdzVHqGxrmFWMzR_XBPPBbEGP4ohNbxHsyewXGO_sQ34Uafwh36HjlPaPqQ6vjhjehftDts7bhl5D9OHpoV3DjxI_zgo-8knEMP70e9Ez2O_DAPzT6u8yhl-PtwYt9KAIcQEQYwg4SyDAIkLADEAMIEIkAQoZBjBhBAABEMGWSAIAAAYowiQDEngAEQSIEAIkgQaoEAgliJgDCKUEOMUZY5pBQwAAhBCCASAEKQcAI')
+
+The numerical representation looks like:
+[-1082788283, -1082665403, -1084831755, ................................................... ,-578817763, -578957027, -547556071]
+The size of the array given above is 100.
+
+Method 2:
+MFCC (Mel Frequency Cepstral Coefficients)-
+In sound processing, the mel-frequency cepstrum is a representation of the short-term power spectrum of a sound, based on a linear cosine transform of a log power spectrum on a nonlinear mel scale of frequency.
