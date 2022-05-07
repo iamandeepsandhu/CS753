@@ -1,4 +1,5 @@
-# Find similar videos based on audio similarity
+Project:
+Find similar videos based on audio similarity
 
 Group members:
 Amandeep Singh - 180040007
@@ -26,3 +27,4 @@ The size of the array given above is 100.
 Method 2:
 MFCC (Mel Frequency Cepstral Coefficients)-
 In sound processing, the mel-frequency cepstrum is a representation of the short-term power spectrum of a sound, based on a linear cosine transform of a log power spectrum on a nonlinear mel scale of frequency.
+Distance metric used - Dynamic Time Wraping
